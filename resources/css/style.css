@@ -144,11 +144,12 @@ header div {
         grid-column: 1 / auto;
         max-width: 600px;
     }
+
+    .span-cadet-blue { 
+        color: var(--cadetBlue);
+    }
 }
 
-.span-cadet-blue { 
-    color: var(--cadetBlue);
-}
 /* Header Aside */
 
 header aside { 
