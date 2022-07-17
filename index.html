@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design System</title>
+    <link rel="stylesheet" href="./resources/css/normalize.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gantari:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div>
+            <ul>
+                <li>
+                    <a href="#font-families">Font-families</a>
+                </li>
+                <li>
+                    <a href="#color-scheme">Color scheme</a>
+                </li>
+                <li>
+                    <a href="#text-styles">Text-styles</a>
+                </li>
+                <li>
+                    <a href="#buttons">Buttons</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div>
+            <section>
+                <h1>Website <span class="span-cadet-blue">Design</span> System</h1>
+            </section>
+            <aside>
+                <code class="inverted">
+                    &lt;section&gt;<br>
+                    &nbsp;&nbsp;&lt;h1&gt;Website Design System&lt;/h1&gt;<br>
+                    &lt;/section&gt;
+                </code>
+            </aside>
+        </div>
+    </header>
+    <main>
+        <section id="font-families">
+            <h2>Font-families</h2>
+            <p>The different kind of fonts used in this design.</p>
+            <ul>
+                <li class="element">
+                    <h3>Gantari regular</h3>
+                    <p class="gantari-regular">The quick brown fox jumps over the lazy dog.</p>
+                    <code>
+                        p {<br>
+                        &nbsp;&nbsp;font-family: 'Gantari', Arial, sans-serif;<br>
+                        &nbsp;&nbsp;font-weight: 400;<br>
+                        }
+                    </code>
+                </li>
+                <li class="element">
+                    <h3>Gantari bold</h3>
+                    <p class="gantari-bold">The quick brown fox jumps over the lazy dog.</p>
+                    <code>
+                        p {<br>
+                        &nbsp;&nbsp;font-family: 'Gantari', Arial, sans-serif;<br>
+                        &nbsp;&nbsp;font-weight: 700;<br>
+                        }
+                    </code>
+                </li>
+                <li class="element">
+                    <h3>Montserrat regular</h3>
+                    <p class="montserrat-regular">The quick brown fox jumps over the lazy dog.</p>
+                    <code>
+                        a {<br>
+                        &nbsp;&nbsp;font-family: 'Montserrat', Arial, sans-serif;<br>
+                        &nbsp;&nbsp;font-weight: 400;<br>
+                        }
+                    </code>
+                </li>
+                <li class="element">
+                    <h3>Montserrat bold</h3>
+                    <p class="montserrat-bold">The quick brown fox jumps over the lazy dog.</p>
+                    <code>
+                        a {<br>
+                        &nbsp;&nbsp;font-family: 'Montserrat', Arial, sans-serif;<br>
+                        &nbsp;&nbsp;font-weight: 700;<br>
+                        }
+                    </code>
+                </li>
+            </ul>
+        </section>
+        <section id="color-scheme">
+            <h2>Color scheme</h2>
+            <p>Different kind of colors used in this design.</p>
+            <ul>
+                <li class="element">
+                    <h3>Black Coffee</h3>
+                    <p>Usage: font colors, footer background-color, code boxes background color, overlay with a opacity.</p>
+                    <div class="color black-coffee">
+                        hsl(320, 10%, 18%)
+                    </div>
+                </li>
+                <li class="element">
+                    <h3>Middle Blue Green</h3>
+                    <p>Usage: border colors</p>
+                    <div class="color middle-blue-green">
+                        hsl(173, 55%, 74%)
+                    </div>
+                </li>
+                <li class="element">
+                    <h3>Mint Cream</h3>
+                    <p>Usage: Navigation bar background-color.</p>
+                    <div class="color mint-cream">
+                        hsl(154, 30%, 95%)
+                    </div>
+                </li>
+                <li class="element">
+                    <h3>Cadet Blue</h3>
+                    <p>Usage: CTA buttons</p>
+                    <div class="color cadet-blue">
+                        hsl(184, 28%, 56%)
+                    </div>
+                </li>
+                <li class="element">
+                    <h3>Umber</h3>
+                    <p>Usage: CTA background color. Make the area this color to feature a part of the content.</p>
+                    <div class="color umber">
+                        hsl(16, 13%, 39%)
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="text-styles">
+            <h2>Text-styles</h2>
+            <p>Different text-styles for the heading elements and the paragraph element.</p>
+            <ul>
+                <li class="element">
+                    <h3>Heading 1 Element</h3>
+                    <p>This heading is used to describe the title of the page.</p>
+                    <code>
+                        h1 {<br>
+                        &nbsp;&nbsp;font-size: 2.2rem;<br>
+                        &nbsp;&nbsp;font-weight: 700;<br>
+                        &nbsp;&nbsp;font-family: 'Gantari', Arial, sans-serif;<br>
+                        }
+                    </code>
+                </li>
+                <li class="element">
+                    <h3>Heading 2 Element</h3>
+                    <p>This heading is used to describe the subject of the section/article</p>
+                    <code>
+                        h2 {<br>
+                        &nbsp;&nbsp;font-size: 1.7rem;<br>
+                        &nbsp;&nbsp;font-weight: 700;<br>
+                        &nbsp;&nbsp;font-family: 'Gantari', Arial, sans-serif;<br>
+                        }
+                    </code>
+                </li>
+                <li class="element">
+                    <h3>Heading 3 Element</h3>
+                    <p>This heading is used to describe the subject of the paragraph text</p>
+                    <code>
+                        h3 {<br>
+                        &nbsp;&nbsp;font-size: 1.3rem;<br>
+                        &nbsp;&nbsp;font-weight: 700;<br>
+                        &nbsp;&nbsp;font-family: 'Gantari', Arial, sans-serif;<br>
+                        }
+                    </code>
+                </li>
+                <li class="element">
+                    <h3>Paragraph Element</h3>
+                    <p>Paragraph text, default text.</p>
+                    <code>
+                        p {<br>
+                        &nbsp;&nbsp;font-size: 1rem;<br>
+                        &nbsp;&nbsp;font-weight: 400;<br>
+                        &nbsp;&nbsp;font-family: 'Gantari', Arial, sans-serif;<br>
+                        }
+                    </code>
+                </li>
+            </ul>
+            <!-- Text-styles h1, h2, h3, p -->
+            <!-- Add codeboxes to the elements-->
+        </section>
+        <section id="buttons">
+            <h2>Buttons</h2>
+            <p>Two different buttons which can be used in this project. One to use for leads and contact the other one is used for alternative links like downloading a brochure.</p>
+            <ul>
+                <li class="element-btn">
+                    <h3>Contact button</h3>
+                    <p>Usage: CTA button. The colors used are for triggering the visitor.</p>
+                    <a href="#" class="btn-contact">Contact button</a>
+                </li>
+                <li class="element-btn">
+                    <h3>Alternative button</h3>
+                    <p>Usage: Alternative buttons. Example: Downloads or intern links.</p>
+                    <a href="#" class="btn-alternative">Alternative button</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <ul>
+                <li>
+                    <a href="https://github.com/Yourivandeutekom" target="_blank">Github</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/youri-van-deutekom-a12761b2/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=nl" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://www.yourivandeutekom.nl" target="_blank">Website</a>
+                </li>
+            </ul> 
+        </div>
+
+    </footer> 
+</body>
+</html>

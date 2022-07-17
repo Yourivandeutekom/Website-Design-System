@@ -1,0 +1,371 @@
+/* Global */
+
+:root {
+    --blackCoffee: hsl(320, 10%, 18%);
+    --middleBlueGreen: hsl(173, 55%, 74%);
+    --mintCream: hsl(154, 30%, 95%);
+    --cadetBlue: hsl(184, 28%, 56%);
+    --umber: hsl(16, 13%, 39%);
+}
+
+* {
+    font-family: 'Gantari', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav div, header div, main section {
+    inline-size: 90vw;
+    max-inline-size: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    line-height: 1.2;
+}
+
+h1, h2, h3 {
+    color: var(--blackCoffee);
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 6em;
+    }
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+/* Nav */
+
+nav {
+    position: fixed;
+    inline-size: 100%;
+    z-index: 5;
+    background-color: var(--mintCream);
+}
+
+nav div {
+    margin-block: 30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: var(--blackCoffee);
+    padding: 0 10px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+
+header { 
+    block-size: 300px;
+    position: relative;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;;
+    color: hsl(0, 0%, 100%);
+} 
+
+@media screen and (min-width: 1024px) {
+    header {
+      block-size: 600px;
+      background-position-y: -10vw;
+    }
+}
+
+header::after { 
+    content: '';
+    background-color: hsla(0, 0%, 0%, 60%);
+    position: absolute;
+    top: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    z-index: 3;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%)
+}
+
+/* Header div */
+
+header div {
+    position: relative;
+    z-index: 4;
+    margin-top: 4.5em
+}
+@media screen and (min-width: 1024px) {
+    header div {
+        display: grid;
+        grid-template-columns:  auto minmax(min-content, 1fr);
+        gap: 1em;
+    }
+}
+
+/* Header Section */
+
+@media screen and (min-width: 1024px) {
+    header section {
+        display: block;
+        grid-column: 1 / auto;
+        max-width: 600px;
+    }
+}
+
+.span-cadet-blue { 
+    color: var(--cadetBlue);
+}
+/* Header Aside */
+
+header aside { 
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    header aside {
+        display: flex;
+        align-items: center;
+        grid-column: 2 / auto;
+    }
+}
+
+/* Main */
+
+h2 {
+    margin-block: 0.5em;
+}
+
+h3 {
+    margin-block: 1em;
+}
+
+/* Section */
+main section, main article {
+    margin-block: 5em;
+}
+
+main ul { 
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    margin-block: 2em;
+}
+
+@media screen and (min-width: 768px) {
+    main ul {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.element {
+    list-style: none;
+    background-color: hsl(0, 0%, 99%);
+    border: 1px solid var(--middleBlueGreen);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+    box-shadow: 0px 0px 0px var(--middleBlueGreen);
+    top: 0;
+    left: 0;
+}
+
+.element:hover {
+    transition: all ease-in-out 0.3;
+    box-shadow: -7px 7px 0px var(--middleBlueGreen);
+    top: -7px;
+    left: 7px;
+}
+
+.element-btn {
+    list-style: none;
+    background-color: hsl(0, 0%, 99%);
+    border: 1px solid var(--middleBlueGreen);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.element p, .element-btn p {
+    margin-block: 1.3em;
+}
+
+.element .color {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    inline-size: 100%;
+    block-size: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 14px;
+}
+
+.black-coffee {
+    background-color: var(--blackCoffee);
+    color: hsl(0, 0%, 100%)
+}
+
+.middle-blue-green {
+    background-color: var(--middleBlueGreen)
+}
+
+.mint-cream {
+    background-color: var(--mintCream);
+    border: 1px solid var(--middleBlueGreen);
+}
+
+.cadet-blue {
+    background-color: var(--cadetBlue);
+}
+
+.umber {
+    background-color: var(--umber);
+    color: hsl(0, 0%, 100%);
+}
+
+code {
+    background-color: var(--blackCoffee);
+    color: var(--mintCream);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    inline-size: 100%;
+    display: block;
+}
+
+code.inverted {
+    background-color: var(--mintCream);
+    color: var(--blackCoffee);
+}
+
+.gantari-regular {
+    font-family: 'Gantari', arial, sans-serif;
+    font-weight: 400;
+}
+
+.gantari-bold {
+    font-family: 'Gantari', arial, sans-serif;
+    font-weight: 700;
+}
+
+.montserrat-regular {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.montserrat-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.btn-contact {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 56px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 7px;
+    background-color: var(--cadetBlue);
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    font-size: 16px;
+    box-shadow: 0 4px 14px 0 hsl(184deg 28% 56% / 38%);
+    transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+}
+
+.btn-contact:hover{
+        background: hsla(184, 28%, 56%, 90%);
+        box-shadow: 0 6px 20px hsl(184deg 28% 56% / 23%);
+}
+
+.btn-alternative {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 56px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 16px;
+    background: hsl(0, 0%, 100%);
+    color: var(--blackCoffee);
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+    transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+}
+
+.btn-alternative:hover{
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--blackCoffee);
+}
+
+footer div {
+    max-inline-size: 1200px;
+    inline-size: 90vw;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-inline: 20px;
+}
+
+footer a {
+    color: hsl(0, 0%, 100%)
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
